@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Moto4Ever</title>
+  <meta name="description" content="Portail de promotion pour un groupe de balades en moto sport : sorties, règles, inscription." />
+  <meta name="theme-color" content="#0b0f19" />
+  <link rel="stylesheet" href="./public/css/styles.css" />
+</head>
+
+<body>
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#top" aria-label="Retour au haut de page">
+        <span> <image src="./public/images/logo.png" alt="Logo Moto4Ever" width="55" height="55"></image></span>
+        <span class="brand__text">
+          <strong>Moto4Ever</strong>
+          <small>Voir le monde sur deux roues!</small>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="#balades">Balades</a>
+        <a href="#regles">Règles</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn--small" href="#rejoindre">Rejoindre</a>
+      </nav>
+
+      <button class="menuBtn" id="menuBtn" aria-expanded="false" aria-controls="mobileNav" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobileNav" id="mobileNav" hidden>
+      <div class="container mobileNav__inner">
+        <a href="#balades">Balades</a>
+        <a href="#regles">Règles</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn" href="#rejoindre">Rejoindre</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="top">
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          
+          <image src="./public/images/logo.png" alt="Logo Moto4Ever" width="300" height="300"></image>
+        
+          <p class="chip">Groupe de balades • Moto sport • Respect & sécurité</p>
+
+          <p class="lead">
+            Des sorties bien organisées, un esprit “ride propre”, des itinéraires fluides et une communauté passionnée.
+            Rejoins-nous pour les prochaines balades.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn" href="#rejoindre">Rejoindre le groupe</a>
+            <a class="btn btn--ghost" href="#balades">Voir les balades</a>
+          </div>
+
+          <div class="stats" role="list">
+            <div class="stat" role="listitem">
+              <strong>+120</strong><span>Membres</span>
+            </div>
+            <div class="stat" role="listitem">
+              <strong>Hebdo</strong><span>Sorties</span>
+            </div>
+            <div class="stat" role="listitem">
+              <strong>0 drama</strong><span>Respect</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__card">
+          <div class="hero__image" aria-label="Image de couverture (remplace par une vraie photo)"></div>
+
+          <div class="hero__quick">
+            <div class="quickItem">
+              <span class="quickIcon" aria-hidden="true">📍</span>
+              <div>
+                <strong>Point de départ</strong>
+                <p>Ex. Station-service / parking sécurisé</p>
+              </div>
+            </div>
+            <div class="quickItem">
+              <span class="quickIcon" aria-hidden="true">🕒</span>
+              <div>
+                <strong>Briefing</strong>
+                <p>10 min avant le départ (rôles & consignes)</p>
+              </div>
+            </div>
+            <div class="quickItem">
+              <span class="quickIcon" aria-hidden="true">🛣️</span>
+              <div>
+                <strong>Rythme</strong>
+                <p>Groupe structuré, pauses planifiées</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__glow" aria-hidden="true"></div>
+    </section>
+
+    <!-- Portal tiles -->
+    <section class="section">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>Accès rapides</h2>
+          <p>Un portail clair pour tout retrouver en 2 clics.</p>
+        </div>
+
+        <div class="tiles">
+          <a class="tile" href="#balades">
+            <div class="tile__icon" aria-hidden="true">🗓️</div>
+            <div class="tile__text">
+              <h3>Prochaines balades</h3>
+              <p>Dates, trajets, niveau, points d’arrêt.</p>
+            </div>
+            <span class="tile__arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a class="tile" href="#regles">
+            <div class="tile__icon" aria-hidden="true">🛡️</div>
+            <div class="tile__text">
+              <h3>Règles & sécurité</h3>
+              <p>Formation du convoi, distances, signaux.</p>
+            </div>
+            <span class="tile__arrow" aria-hidden="true">→</span>
+          </a>
+
+
+
+          <a class="tile" href="#rejoindre">
+            <div class="tile__icon" aria-hidden="true">✅</div>
+            <div class="tile__text">
+              <h3>Rejoindre le groupe</h3>
+              <p>Inscription rapide + canal de contact.</p>
+            </div>
+            <span class="tile__arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rides -->
+    <section class="section" id="balades">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>Prochaines balades</h2>
+          <p>Exemples de sorties (tu peux éditer facilement les cartes).</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card__top">
+              <h3>Sortie “Courbes & panorama”</h3>
+              <span class="badge">Intermédiaire</span>
+            </div>
+            <ul class="meta">
+              <li><strong>Date :</strong> Samedi — 09:00</li>
+              <li><strong>Durée :</strong> 2h30</li>
+              <li><strong>Distance :</strong> ~160 km</li>
+              <li><strong>Pause :</strong> Café / belvédère</li>
+            </ul>
+            <p class="card__note">Trajet fluide, on garde l’espace, dépassements propres, regroupements aux points clés.</p>
+            <div class="card__actions">
+              <a class="btn btn--ghost btn--small" href="#rejoindre">Je veux venir</a>
+              <button class="btn btn--small" data-copy="https://maps.google.com/?q=Itineraire+exemple">Copier itinéraire</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <h3>Ride “Sunset chill”</h3>
+              <span class="badge badge--soft">Débutant+</span>
+            </div>
+            <ul class="meta">
+              <li><strong>Date :</strong> Mercredi — 18:30</li>
+              <li><strong>Durée :</strong> 1h45</li>
+              <li><strong>Distance :</strong> ~90 km</li>
+              <li><strong>Pause :</strong> Photos</li>
+            </ul>
+            <p class="card__note">Sortie relax, parfait pour apprendre la formation, les signaux et les regroupements.</p>
+            <div class="card__actions">
+              <a class="btn btn--ghost btn--small" href="#rejoindre">Je veux venir</a>
+              <button class="btn btn--small" data-copy="https://maps.google.com/?q=Point+de+depart">Copier départ</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <h3>Balade “Long run”</h3>
+              <span class="badge badge--hard">Avancé</span>
+            </div>
+            <ul class="meta">
+              <li><strong>Date :</strong> Dimanche — 08:00</li>
+              <li><strong>Durée :</strong> 4h00</li>
+              <li><strong>Distance :</strong> ~280 km</li>
+              <li><strong>Pause :</strong> Essence + lunch</li>
+            </ul>
+            <p class="card__note">Groupe discipliné, niveaux compatibles, briefing obligatoire, respect du code.</p>
+            <div class="card__actions">
+              <a class="btn btn--ghost btn--small" href="#rejoindre">Je veux venir</a>
+              <button class="btn btn--small" data-copy="https://maps.google.com/?q=Route+exemple">Copier route</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rules -->
+    <section class="section section--alt" id="regles">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>Règles & sécurité</h2>
+          <p>Le but : plaisir + fluidité + sécurité. Simple, clair, appliqué.</p>
+        </div>
+
+        <div class="rules">
+          <div class="rule">
+            <h3>Formation & distances</h3>
+            <p>Formation en quinconce (si applicable), distance de sécurité, jamais de “roulette russe” entre motos.</p>
+          </div>
+          <div class="rule">
+            <h3>Briefing obligatoire</h3>
+            <p>Départ = consignes, parcours, regroupements, signaux main, rôle du lead et du sweeper.</p>
+          </div>
+          <div class="rule">
+            <h3>Respect du code</h3>
+            <p>On ride propre. On ne met personne en danger. Le groupe n’est pas une piste.</p>
+          </div>
+          <div class="rule">
+            <h3>Équipement</h3>
+            <p>Casque homologué, gants, veste, bottes recommandées. Moto en état (pneus / freins / essence).</p>
+          </div>
+        </div>
+
+        <div class="callout">
+          <div>
+            <strong>Tu es nouveau ?</strong>
+            <p>On a une sortie “Débutant+” et on t’explique la structure du convoi sans jugement.</p>
+          </div>
+          <a class="btn btn--small" href="#rejoindre">Je m’inscris</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--alt" id="faq">
+      <div class="container">
+        <div class="sectionHead">
+          <h2>FAQ</h2>
+          <p>Réponses rapides aux questions qu’on reçoit tout le temps.</p>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary>Est-ce que je dois avoir une moto “sport” pure ?</summary>
+            <p>Non. L’important, c’est d’avoir une moto en bon état et un niveau compatible avec la sortie choisie.</p>
+          </details>
+          <details>
+            <summary>Comment vous gérez les niveaux (débutant / intermédiaire / avancé) ?</summary>
+            <p>On annonce le niveau, le rythme et le style. Les regroupements sont planifiés. On préfère plusieurs petits groupes structurés.</p>
+          </details>
+          <details>
+            <summary>Est-ce gratuit ?</summary>
+            <p>Oui. Parfois une pause café/restaurant est au frais de chacun.</p>
+          </details>
+          <details>
+            <summary>Où se font les annonces ?</summary>
+            <p>Ajoute ici : “Groupe Facebook”, “Discord”, “WhatsApp”, etc. Le formulaire ci-dessous sert à te contacter.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Join -->
+    <section class="section" id="rejoindre">
+      <div class="container">
+        <div class="join">
+          <div class="join__info">
+            <h2>Rejoindre Moto4Ever</h2>
+            <p>
+              Remplis ce formulaire et on te contacte avec le lien du groupe + les consignes.
+              (Tu peux aussi afficher un numéro / courriel ici.)
+            </p>
+
+            <div class="contactBox">
+              <div class="contactLine">
+                <span aria-hidden="true">📧</span>
+                <div>
+                  <strong>Contact</strong>
+                  <p>contact@moto4ever.ca</p>
+                </div>
+              </div>
+              <div class="contactLine">
+                <span aria-hidden="true">📱</span>
+                <div>
+                  <strong>Urgence (optionnel)</strong>
+                  <p>+1 000-000-0000</p>
+                </div>
+              </div>
+              <div class="contactLine">
+                <span aria-hidden="true">📍</span>
+                <div>
+                  <strong>Région</strong>
+                  <p>Ex. Mauricie / Centre-du-Québec</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="form" id="joinForm" novalidate>
+            <div class="field">
+              <label for="name">Nom</label>
+              <input id="name" name="name" type="text" placeholder="Ex. Marco" required minlength="2" />
+              <small class="hint">Ton prénom suffit.</small>
+            </div>
+
+            <div class="field">
+              <label for="email">Courriel</label>
+              <input id="email" name="email" type="email" placeholder="exemple@domaine.com" required />
+            </div>
+
+            <div class="field">
+              <label for="bike">Moto</label>
+              <input id="bike" name="bike" type="text" placeholder="Ex. CBR600RR / R1 / Ninja 650" />
+            </div>
+
+            <div class="field">
+              <label for="level">Niveau</label>
+              <select id="level" name="level" required>
+                <option value="" selected disabled>Choisir…</option>
+                <option>Débutant+</option>
+                <option>Intermédiaire</option>
+                <option>Avancé</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="message">Message (optionnel)</label>
+              <textarea id="message" name="message" rows="4" placeholder="Disponibilités, questions, etc."></textarea>
+            </div>
+
+            <label class="check">
+              <input type="checkbox" id="rulesOk" required />
+              <span>J’ai lu les règles et je m’engage à rider propre et sécuritaire.</span>
+            </label>
+
+            <button class="btn" type="submit">Envoyer la demande</button>
+            <p class="form__note" id="formNote" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__tiny">
+        <p>© <span id="year">2026</span> RetroAction.dev • Tous droits réservés</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./public/javascript/script.js"></script>
+</body>
+</html>
